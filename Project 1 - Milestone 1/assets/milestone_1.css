@@ -11,6 +11,10 @@ body {
     color: whitesmoke;
 }
 
+#page-contents {
+    width: 80%;
+}
+
 .jumbotron {
     background-color: #7E8B95;
     margin-bottom: 0px;
