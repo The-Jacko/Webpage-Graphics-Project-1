@@ -177,7 +177,7 @@ td {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "twitter youtube";
-    column-gap: 5px;
+    column-gap: 10px;
 }
 
 #twitter {
@@ -225,4 +225,13 @@ input[type='radio'] {
 
 img#school-banner {
     width: 50%;
+}
+
+.indent {
+    text-indent: 1.5em;
+}
+
+span#title-span {
+    font-weight: lighter;
+    font-style: italic;
 }
