@@ -7,55 +7,80 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/milestone_2.css">
   <title>Project 1</title>
+  <script src="https://kit.fontawesome.com/43a7fc0c9f.js" crossorigin="anonymous"></script>
+  <style>
+    a,
+    a:visited {
+      color: #21e6c1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #cfe4e0;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Menu section -->
   <div id="menu-section">
-    <span><a href="#profile-info">Profile</a></span>
-    <span><a href="#education">Education</a></span>
-    <span><a href="#experience">Experience</a></span>
-    <span><a href="#programming-skills">Programming Skills</a></span>
-    <span><a href="#general-interests">General Interests</a></span>
-    <span><a href="#favorite-media">Favorite Media</a></span>
-    <span><a href="#favorite-website">Favorite Websites</a></span>
-    <span><a href="#course-projects">Projects</a></span>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"> Home</i></a></li>
+      <li><a href="#profile-info">Profile</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#programming-skills">Programming Skills</a></li>
+      <li><a href="#general-interests">General Interests</a></li>
+      <li><a href="#favorite-media">Favorite Media</a></li>
+      <li><a href="#favorite-website">Favorite Websites</a></li>
+      <li><a href="#course-projects">Projects</a></li>
+    </ul>
   </div>
 
+  <!-- contents of page -->
+  <div id="page-contents">
 
-  <!-- Page title -->
-  <h1>CUS 1172: Web Page Graphics</h1>
-
-  <!-- Basic profile info -->
-  <div id="profile-info">
-    <h2>About me</h2>
-    <img src="./handsome_squidward.jpg" width="230">
-    <div>
-      <p>Name: Jackie Ho</p>
-      <p>School: St. John's University</p>
-      <p>Major: Computer Science</p>
+    <!-- Page title -->
+    <div id="heading">
+      <h1 class="title" style="text-align:center">CUS 1172: Web Page Graphics</h1>
     </div>
-    <div>
-      <form action="">
+
+
+    <!-- Basic profile info -->
+    <div id="profile-info">
+      <h2 class="title">About me</h2>
+      <div class="content">
+        <img id="profile-picture" src="./handsome_squidward.jpg">
         <div>
-          <label for="hot_or_not">Am I: Hot</label>
-          <input type="radio" name="hot_or_not" value="Hot">
-          <span>or</span>
-          <label for="hot_or_not">Not</label>
-          <input type="radio" name="hot_or_not" value="Not">
-          <button class="btn btn-dark">Submit</button>
+          <p>Name: Jackie Ho</p>
+          <p>School: St. John's University</p>
+          <p>Major: Computer Science</p>
         </div>
-      </form>
+        <div>
+          <form action="">
+            <div>
+              <span>Am I: </span>
+              <label for="hot_or_not">Hot</label>
+              <input type="radio" name="hot_or_not" value="Hot" class="hot">
+              <span>or</span>
+              <label for="hot_or_not">Not</label>
+              <input type="radio" name="hot_or_not" value="Not" class="not">
+              <button class="btn btn-dark">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
 
 
-  <!-- Education -->
-  <div id="education">
-    <div>
-      <h2>Education</h2>
-      <div>
-        <h4>St. John's University</h4>
+    <!-- Education -->
+    <div id="education">
+      <h2 class="title">Education</h2>
+
+      <div class="content">
+        <img
+          src="https://lh3.googleusercontent.com/proxy/hM3s_ED1tUM_eBxspHC4QbJasGP3CWKIgnLJz1F4rABV1Wyx4Pkev3rWoCqihAWyF4XPA0cCHZxECZevLXGVlaF9vWOvSJSdMA_n70asdXl8Hvk_DuGgiCbsfIXg"
+          id="school-banner">
         <p>Bachelor of Science in Computer Science (B.S.)</p>
         <p>
           Throughout my college career, I have been attending St. John's University. I am
@@ -71,160 +96,176 @@
         </p>
       </div>
     </div>
-  </div>
 
 
-  <!-- Work Experience -->
-  <div id="experience">
-    <h2>Experience</h2>
-    <div>
-      <label class="jobs" for="experience-1"><strong>Project Management
-          Internship at Advantage Capital Funding</strong>
-      </label>
-      <ul id="experience-1">
+    <!-- Work Experience -->
+    <div id="experience">
+      <h2 class="title">Experience</h2>
+      <div class="content">
+        <label class="jobs" for="experience-1"><strong>Project Management
+            Internship at Advantage Capital Funding</strong>
+        </label>
+        <ul id="experience-1">
+          <li>
+            Managed a team of 10 developers as we migrated our platform to a new framework, Vue JS
+          </li>
+          <li>
+            Delegated tasks aimed at developers’ strengths and offered clarity on the code
+          </li>
+          <li>
+            Participated in quality assurance by testing every component of newly implemented code
+            to make sure everything was perfect
+          </li>
+          <li>
+            Recognized by manager for outstanding ability to take initiative and do whatever it took
+            to help the team out</li>
+          <li>
+            Created a website using WordPress for the company’s future expansion out to the west
+            coast
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Programming Skills -->
+    <div id="programming-skills">
+      <h2 class="title">Programming Skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Programming Languages</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Proficient</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- General Interests -->
+    <div id="general-interests">
+      <h2 class="title">General Interests</h2>
+      <div class="content">
+        <div id="hobby1">
+          <h4>Sleeping</h4>
+          <p>
+            I take the sport of sleeping very seriously. Sleeping is my number one hobby. I do
+            it competitively and was ranked #2 worldwide last year. I am coming for first place
+            this year and have no doubt in my mind that I will get it.
+          </p>
+        </div>
+        <div id="hobby2">
+          <h4>Eating</h4>
+          <p>
+            Eating is my heart and soul. I can eat for days. Italian, Chinese, American, you
+            name it, I'll eat it! I love foods of all kind.
+          </p>
+          <form action="">
+            <label for="food-suggestion">Enter your restaurant
+              recommendations: </label>
+            <input class="form-control" id="food-suggestion" type="text"
+              placeholder="Restaurant name">
+            <button class="btn btn-dark">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Favorite song, film, TV shows -->
+    <div id="favorite-media">
+      <div id="song">
+        <h2 class="title">Favorite Song</h2>
+        <iframe src="https://www.youtube.com/embed/fWRipf9VRT0" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div id="movie">
+        <h2 class="title">Favorite Movie</h2>
+        <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div id="show">
+        <h2 class="title">Favorite TV Show</h2>
+        <iframe src="https://www.youtube.com/embed/VaOt6tXyf2Y" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+
+    <!-- Favorite website -->
+    <div id="favorite-website">
+      <h2 class="title">Favorite Websites</h2>
+      <div class="content">
+        <div id="twitter">
+          <a class="btn btn-info" href="https://twitter.com" target="_blank">
+            <i class="fab fa-twitter"> Twitter</i>
+          </a>
+          <p>
+            Twitter is one of my favorite websites because there are an abundant amount of funny
+            posts. On Twitter, you are able to find people tweeting about whatever their heart
+            desires. For the same reason why I love the website so much, you are able to find so
+            many
+            hilarious posts on the website.
+          </p>
+        </div>
+        <div id="youtube">
+          <a class="btn btn-info" href="https://youtube.com" target="_blank">
+            <i class="fab fa-youtube"> Youtube</i>
+          </a>
+          <p>
+            Youtube is a great way to pass time. Youtube contains videos of any and everything. If
+            you want to be entertained, educated, or just pass time, youtube is the place to go. You
+            can watch one video and go down a rabbit hole and BOOM! its 3 am.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- My Course Projects -->
+    <div id="course-projects">
+      <h2 class="title">Projects</h2>
+      <ul class="content">
         <li>
-          Managed a team of 10 developers as we migrated our platform to a new framework,
-          Vue JS</li>
-        <li>
-          Delegated tasks aimed at developers’ strengths and offered clarity on the code
-        </li>
-        <li>
-          Participated in quality assurance by testing every component of newly
-          implemented code to make sure everything was perfect</li>
-        <li>
-          Recognized by manager for outstanding ability to take initiative and do whatever
-          it took to help the team out</li>
-        <li>
-          Created a website using WordPress for the company’s future expansion out to the
-          west coast
+          <h4>Project 1: Milestone 1</h4>
+          <p>
+            In this project, I created an about me page using html. This page includes
+            information about my education, my skills, my hobbies, and a few things that I
+            enjoy. This page was created using various html tags; such as: h, a, form, ul, li,
+            div, p, img, iframe, span tags.
+          </p>
+          <p>
+            Check out my:
+            <a
+              href="https://jho2016.github.io/Webpage-Graphics/Project%201%20-%20Milestone%201/milestone_1.html">
+              Project 1: Milestone 1
+            </a>
+          </p>
         </li>
       </ul>
     </div>
+
   </div>
-
-
-  <!-- Programming Skills -->
-  <div id="programming-skills">
-    <h2>Programming Skills</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Programming Languages</th>
-          <th>Proficiency</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Python</td>
-          <td>Proficient</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>Intermediate</td>
-        </tr>
-        <tr>
-          <td>Javascript</td>
-          <td>Intermediate</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-  <!-- General Interests -->
-  <div id="general-interests">
-    <h2>General Interests</h2>
-    <div>
-      <h4>Sleeping</h4>
-      <p>
-        I take the sport of sleeping very seriously. Sleeping is my number one hobby. I do
-        it competitively and was ranked #2 worldwide last year. I am coming for first place
-        this year and have no doubt in my mind that I will get it.
-      </p>
-      <h4>Eating</h4>
-      <p>
-        Eating is my heart and soul. I can eat for days. Italian, Chinese, American, you
-        name it, I'll eat it! I love foods of all kind.
-      </p>
-      <form action="">
-        <label for="food-suggestion">Enter your restaurant
-          recommendations: </label>
-        <input class="form-control" id="food-suggestion" type="text" placeholder="Restaurant name">
-        <button class="btn btn-dark">Submit</button>
-      </form>
-    </div>
-  </div>
-
-
-  <!-- Favorite song, film, TV shows -->
-  <div id="favorite-media">
-    <h2>Favorite Song</h2>
-    <iframe width=" 500" height="265" src="https://www.youtube.com/embed/fWRipf9VRT0"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-    <h2>Favorite Movie</h2>
-    <iframe width="500" height="265" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-    <h2>Favorite TV Show</h2>
-    <iframe width="500" height="265" src="https://www.youtube.com/embed/VaOt6tXyf2Y" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-
-  <!-- Favorite website -->
-  <div id="favorite-website">
-    <h2>Favorite Websites</h2>
-    <a class="btn btn-info" href="https://twitter.com" target="_blank">
-      <h3>Twitter</h3>
-    </a>
-    <p>
-      Twitter is one of my favorite websites because there are an abundant amount of funny
-      posts. On Twitter, you are able to find people tweeting about whatever their heart
-      desires. For the same reason why I love the website so much, you are able to find so
-      many
-      hilarious posts on the website.
-    </p>
-
-    <a class="btn btn-info" href="https://youtube.com" target="_blank">
-      <h3>Youtube</h3>
-    </a>
-    <p>
-      Youtube is a great way to pass time. Youtube contains videos of any and everything. If
-      you want to be entertained, educated, or just pass time, youtube is the place to go. You
-      can watch one video and go down a rabbit hole and BOOM! its 3 am.
-    </p>
-  </div>
-
-
-  <!-- My Course Projects -->
-  <div id="course-projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>
-        <h4>Project 1: Milestone 1</h4>
-        <p>
-          In this project, I created an about me page using html. This page includes
-          information about my education, my skills, my hobbies, and a few things that I
-          enjoy. This page was created using various html tags; such as: h, a, form, ul, li,
-          div, p, img, iframe, span tags.
-        </p>
-        <p>
-          Check out my:
-          <a
-            href="https://jho2016.github.io/Webpage-Graphics/Project%201%20-%20Milestone%201/milestone_1.html">
-            Project 1: Milestone 1
-          </a>
-        </p>
-      </li>
-    </ul>
-  </div>
-
 
 </body>
 

@@ -1,0 +1,228 @@
+body {
+    background-color: #10294b;
+    margin: 0;
+    color: rgb(218, 218, 218);
+    display: grid;
+    /* gives us one column that is the size of the nav bar
+     and another column thats the size of the rest of the page */
+    grid-template-columns: 17% 1fr;
+    column-gap: 1em;
+    grid-template-areas: "navbar page-contents";
+}
+
+#menu-section {
+    grid-area: navbar;
+}
+
+#menu-section ul {
+    background-color: #1b3250;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: sticky;
+}
+
+#menu-section ul li a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 25px;
+}
+
+#menu-section ul li a:hover {
+    background-color: #10294b;
+}
+
+#page-contents {
+    padding-right: 1em;
+    grid-area: page-contents;
+    max-height: 100vh;
+    overflow: auto;
+    /* create a grid within this element*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "heading heading heading"
+        "profile-info education education"
+        "programming-skills experience experience"
+        "general-interests general-interests general-interests"
+        "favorite-media favorite-media favorite-media"
+        "favorite-website favorite-website favorite-website"
+        "course-projects course-projects course-projects";
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+#heading {
+    grid-area: heading;
+    justify-self: center;
+}
+
+#profile-info {
+    grid-area: profile-info;
+}
+
+#education {
+    grid-area: education;
+}
+
+#education>.content>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#education>.content>img+p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#programming-skills {
+    grid-area: programming-skills;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "table";
+}
+
+#programming-skills>h2.title {
+    grid-area: title;
+}
+
+#programming-skills>table {
+    grid-area: table;
+    border: 1px solid #278ea5;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#programming-skills>table th,
+td {
+    font-size: 20px;
+    border: 2px solid #278ea5;
+    text-align: center;
+}
+
+#experience {
+    grid-area: experience;
+}
+
+#general-interests {
+    grid-area: general-interests;
+}
+
+#general-interests>div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "hobby1 hobby2";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+#general-interests div p {
+    margin-bottom: 0;
+}
+
+#general-interests div h4 {
+    margin-top: 0;
+}
+
+#hobby1 {
+    grid-area: hobby1;
+}
+
+#hobby2 {
+    grid-area: hobby2;
+}
+
+#favorite-media {
+    grid-area: favorite-media;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 305px 305px;
+    grid-template-areas:
+        "movie show"
+        "song song";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+#movie {
+    grid-area: movie;
+}
+
+#show {
+    grid-area: show;
+}
+
+#song {
+    grid-area: song;
+}
+
+#favorite-media>div>iframe {
+    width: 500px;
+    height: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#favorite-website {
+    grid-area: favorite-website;
+}
+
+#favorite-website>div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "twitter youtube";
+    column-gap: 5px;
+}
+
+#twitter {
+    grid-area: twitter;
+}
+
+#youtube {
+    grid-area: youtube;
+}
+
+#favorite-website>div.content>div i {
+    font-size: 35px;
+    text-align: center;
+    display: block;
+}
+
+#course-projects {
+    grid-area: course-projects;
+}
+
+#page-contents>div {
+    background-color: #25364b;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.title {
+    color: #21e6c1;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#profile-picture {
+    max-width: 100%;
+}
+
+input[type='radio'] {
+    transform: scale(1.2);
+}
+
+.content {
+    font-size: 20px;
+}
+
+img#school-banner {
+    width: 50%;
+}
