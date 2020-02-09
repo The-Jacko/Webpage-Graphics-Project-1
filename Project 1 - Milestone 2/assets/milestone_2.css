@@ -188,10 +188,16 @@ td {
     grid-area: youtube;
 }
 
+#favorite-website>div.content>div a {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #favorite-website>div.content>div i {
     font-size: 35px;
-    text-align: center;
-    display: block;
+    color: #278ea5;
 }
 
 #course-projects {
