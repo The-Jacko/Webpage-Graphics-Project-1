@@ -5,7 +5,7 @@ body {
     display: grid;
     /* gives us one column that is the size of the nav bar
      and another column thats the size of the rest of the page */
-    grid-template-columns: 17% 1fr;
+    grid-template-columns: minmax(min-content, 17%) 1fr;
     column-gap: 1em;
     grid-template-areas: "navbar page-contents";
 }
@@ -145,8 +145,7 @@ td {
     grid-template-areas:
         "movie show"
         "song song";
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 10px;
 }
 
 #movie {
@@ -162,11 +161,15 @@ td {
 }
 
 #favorite-media>div>iframe {
-    width: 500px;
+    width: 85%;
     height: 260px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#favorite-media>div#song>iframe {
+    width: 50%;
 }
 
 #favorite-website {
