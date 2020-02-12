@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/milestone_2.css">
+  <link rel="stylesheet" media="screen and (min-width:870px)"
+    href="assets/milestone_2_large_screens.css">
+  <link rel="stylesheet" media="screen and (max-width:870px)"
+    href="assets/milestone_2_smaller_screens.css">
   <title>Project 1</title>
   <script src="https://kit.fontawesome.com/43a7fc0c9f.js" crossorigin="anonymous"></script>
   <style>
@@ -25,7 +28,7 @@
   <!-- Menu section -->
   <div id="menu-section">
     <ul>
-      <li><a href="#"><i class="fas fa-home"> Home</i></a></li>
+      <li><a href="#heading"><i class="fas fa-home"> Home</i></a></li>
       <li><a href="#profile-info">Profile</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -67,7 +70,7 @@
               <span>or</span>
               <label for="hot_or_not">Not</label>
               <input type="radio" name="hot_or_not" value="Not" class="not">
-              <button class="btn btn-dark">Submit</button>
+              <button>Submit</button>
             </div>
           </form>
         </div>
@@ -81,7 +84,7 @@
       <div class="content">
         <img src="./assets/stjohns-banner.png" id="school-banner">
         <p>Bachelor of Science in Computer Science (B.S.)</p>
-        <p class="indent">
+        <p class="indent education-paragraph">
           Throughout my college career, I have been attending St. John's University. I am
           currently a senior and am expecting to graduate with a B.S. in Computer Science in
           December of 2020. From the start, I knew I wanted to purse a computer science
@@ -167,6 +170,7 @@
             this year and have no doubt in my mind that I will get it.
           </p>
         </div>
+        <hr>
         <div id="hobby2">
           <h4>Eating</h4>
           <p class="indent">
@@ -178,7 +182,7 @@
               recommendations: </label>
             <input class="form-control" id="food-suggestion" type="text"
               placeholder="Restaurant name">
-            <button class="btn btn-dark">Submit</button>
+            <button>Submit</button>
           </form>
         </div>
       </div>
@@ -189,25 +193,32 @@
     <div id="favorite-media">
       <div id="song">
         <h2 class="title">Favorite Song</h2>
-        <iframe src="https://www.youtube.com/embed/fWRipf9VRT0" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <div>
+          <iframe src="https://www.youtube.com/embed/fWRipf9VRT0" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
       <div id="movie">
         <h2 class="title">Favorite Movie</h2>
-        <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <div>
+          <iframe src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
       <div id="show">
         <h2 class="title">Favorite TV Show</h2>
-        <iframe src="https://www.youtube.com/embed/VaOt6tXyf2Y" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <div>
+          <iframe src="https://www.youtube.com/embed/VaOt6tXyf2Y" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
+
     </div>
 
 

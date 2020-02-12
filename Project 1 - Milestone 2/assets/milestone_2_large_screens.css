@@ -1,7 +1,7 @@
 body {
     background-color: #10294b;
     margin: 0;
-    color: rgb(218, 218, 218);
+    color: rgb(227, 227, 227);
     display: grid;
     /* gives us one column that is the size of the nav bar
      and another column thats the size of the rest of the page */
@@ -126,7 +126,7 @@ td {
 }
 
 #general-interests div h4 {
-    margin-top: 0;
+    margin-top: .5em;
 }
 
 #hobby1 {
@@ -140,11 +140,11 @@ td {
 #favorite-media {
     grid-area: favorite-media;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 305px 305px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(fit-content, 305px) minmax(fit-content, 305px);
     grid-template-areas:
-        "movie show"
-        "song song";
+        "movie movie show show"
+        ". song song .";
     column-gap: 10px;
 }
 
@@ -160,16 +160,23 @@ td {
     grid-area: song;
 }
 
-#favorite-media>div>iframe {
-    width: 85%;
-    height: 260px;
+#favorite-media>div>div {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+#favorite-media>div iframe {
+    width: 95%;
+    height: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-#favorite-media>div#song>iframe {
-    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #favorite-website {
@@ -243,4 +250,8 @@ img#school-banner {
 span#title-span {
     font-weight: lighter;
     font-style: italic;
+}
+
+hr {
+    display: none;
 }
