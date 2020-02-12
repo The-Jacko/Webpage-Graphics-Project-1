@@ -108,8 +108,10 @@ td {
     grid-area: experience;
 }
 
-#general-interests {
+#page-contents>div#general-interests {
     grid-area: general-interests;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #general-interests>div.content {
@@ -178,8 +180,10 @@ td {
     right: 0;
 }
 
-#favorite-website {
+#page-contents>div#favorite-website {
     grid-area: favorite-website;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #favorite-website>div.content {
@@ -242,17 +246,16 @@ input[type='radio'] {
     font-size: 20px;
 }
 
+.content p {
+    line-height: 1.5em;
+}
+
 img#school-banner {
     width: 50%;
 }
 
 .indent {
     text-indent: 1.5em;
-}
-
-span#title-span {
-    font-weight: lighter;
-    font-style: italic;
 }
 
 hr {

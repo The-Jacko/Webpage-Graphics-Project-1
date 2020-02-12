@@ -126,17 +126,16 @@ input[type='radio'] {
     font-size: 20px;
 }
 
+.content p {
+    line-height: 1.5em;
+}
+
 img#school-banner {
     width: 75%;
 }
 
 .indent {
     text-indent: 1.5em;
-}
-
-span#title-span {
-    font-weight: lighter;
-    font-style: italic;
 }
 
 button {
