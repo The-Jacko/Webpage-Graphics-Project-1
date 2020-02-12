@@ -139,7 +139,11 @@ img#school-banner {
 }
 
 button {
-    background-color: white;
+    background-color: #278ea5;
+    color: white;
+    border: none;
+    padding: .25 1em;
+    font-size: 15px;
 }
 
 .education-paragraph {
