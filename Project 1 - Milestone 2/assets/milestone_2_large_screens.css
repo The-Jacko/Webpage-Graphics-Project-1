@@ -117,8 +117,7 @@ td {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "hobby1 hobby2";
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 2em;
 }
 
 #general-interests div p {
@@ -187,7 +186,7 @@ td {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "twitter youtube";
-    column-gap: 10px;
+    column-gap: 2em;
 }
 
 #twitter {
@@ -212,6 +211,10 @@ td {
 
 #course-projects {
     grid-area: course-projects;
+}
+
+#course-projects ul {
+    padding-right: 20px;
 }
 
 #page-contents>div {
