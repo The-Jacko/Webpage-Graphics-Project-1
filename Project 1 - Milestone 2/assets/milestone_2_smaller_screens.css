@@ -1,7 +1,7 @@
 body {
     background-color: #10294b;
     margin: 0;
-    color: rgb(227, 227, 227);
+    color: white;
 }
 
 #menu-section ul {
@@ -94,6 +94,10 @@ hr {
 #favorite-website>div.content>div i {
     font-size: 35px;
     color: #278ea5;
+}
+
+#course-projects>ul {
+    padding-left: 20px;
 }
 
 #page-contents>div {

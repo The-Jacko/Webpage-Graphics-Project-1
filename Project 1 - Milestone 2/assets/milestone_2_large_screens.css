@@ -1,7 +1,7 @@
 body {
     background-color: #10294b;
     margin: 0;
-    color: rgb(227, 227, 227);
+    color: rgb(230, 230, 230);
     display: grid;
     /* gives us one column that is the size of the nav bar
      and another column thats the size of the rest of the page */
