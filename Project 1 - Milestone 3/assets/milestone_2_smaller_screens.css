@@ -1,0 +1,151 @@
+body {
+    background-color: #10294b;
+    margin: 0;
+    color: white;
+}
+
+#menu-section ul {
+    background-color: #1b3250;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh
+}
+
+#menu-section ul li a {
+    display: block;
+    padding: 4px 16px;
+    font-size: 2.8em;
+}
+
+#page-contents>div#heading {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#education>.content>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#education>.content>img+p {
+    margin-top: 0;
+    text-align: center;
+}
+
+#programming-skills>table {
+    border: 1px solid #278ea5;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#programming-skills>table th,
+td {
+    font-size: 20px;
+    border: 2px solid #278ea5;
+    text-align: center;
+}
+
+#experience ul {
+    padding-left: 20px;
+}
+
+#general-interests div p {
+    margin-top: .5em;
+}
+
+#general-interests div h4 {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+hr {
+    width: 95%;
+}
+
+#favorite-media>div>div {
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+#favorite-media>div iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#favorite-website>div.content>div {
+    margin-top: 20px;
+}
+
+#favorite-website>div.content>div a {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#favorite-website>div.content>div i {
+    font-size: 35px;
+    color: #278ea5;
+}
+
+#course-projects>ul {
+    padding-left: 20px;
+}
+
+#page-contents>div {
+    background-color: #25364b;
+    padding: 1em;
+    margin: 1em 1em;
+    margin-top: 0;
+}
+
+.title {
+    color: #21e6c1;
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+#profile-picture {
+    width: 100%;
+}
+
+input[type='radio'] {
+    transform: scale(1.2);
+}
+
+.content {
+    font-size: 20px;
+}
+
+.content p {
+    line-height: 1.5em;
+}
+
+img#school-banner {
+    width: 75%;
+}
+
+.indent {
+    text-indent: 1.5em;
+}
+
+button {
+    background-color: #278ea5;
+    color: white;
+    border: none;
+    padding: .25 1em;
+    font-size: 15px;
+}
+
+.education-paragraph {
+    margin-bottom: 0;
+}
